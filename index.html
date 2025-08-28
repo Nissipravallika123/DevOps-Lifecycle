@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevOps Lifecycle Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    svg {
+      margin-top: 20px;
+      max-width: 100%;
+      height: auto;
+    }
+    .label {
+      font-size: 14px;
+      fill: #fff;
+      font-weight: bold;
+    }
+    .stage {
+      fill: #007acc;
+      stroke: #005b99;
+      stroke-width: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle</h1>
+  <svg width="800" height="400" viewBox="0 0 800 400">
+    <!-- Infinity loop shape -->
+    <path d="M 200,200
+             C 100,100 100,300 200,200
+             C 300,100 300,300 400,200
+             C 500,100 500,300 600,200
+             C 700,100 700,300 600,200
+             C 500,100 500,300 400,200
+             C 300,100 300,300 200,200"
+          fill="none" stroke="#ccc" stroke-width="20"/>
+
+    <!-- Stages -->
+    <circle cx="150" cy="200" r="40" class="stage"/>
+    <text x="150" y="205" text-anchor="middle" class="label">Plan</text>
+
+    <circle cx="250" cy="120" r="40" class="stage"/>
+    <text x="250" y="125" text-anchor="middle" class="label">Develop</text>
+
+    <circle cx="350" cy="200" r="40" class="stage"/>
+    <text x="350" y="205" text-anchor="middle" class="label">Build</text>
+
+    <circle cx="450" cy="120" r="40" class="stage"/>
+    <text x="450" y="125" text-anchor="middle" class="label">Test</text>
+
+    <circle cx="550" cy="200" r="40" class="stage"/>
+    <text x="550" y="205" text-anchor="middle" class="label">Release</text>
+
+    <circle cx="650" cy="120" r="40" class="stage"/>
+    <text x="650" y="125" text-anchor="middle" class="label">Deploy</text>
+
+    <circle cx="550" cy="280" r="40" class="stage"/>
+    <text x="550" y="285" text-anchor="middle" class="label">Operate</text>
+
+    <circle cx="450" cy="280" r="40" class="stage"/>
+    <text x="450" y="285" text-anchor="middle" class="label">Monitor</text>
+  </svg>
+</body>
+</html>
